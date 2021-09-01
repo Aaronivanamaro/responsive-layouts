@@ -1,0 +1,88 @@
+/* Variables */
+
+:root {
+    --primary: #44c3ff;
+    --secondary: #ecf5f8;
+    --light: #fff;
+    --dark: #0e223c;      
+    --font-clr-1: #333333;
+    --font-clr-2: #3b3b3b;
+    --font-clr-3: #fdfdfd;
+    --font-clr-4: #f9fafa;
+    --font-clr-5: #7a7a7a;
+}
+
+/* General Styles */
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url(./assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--font-clr-1);
+    font-size: 1rem;
+    overflow-x: hidden;
+}
+ul { padding: 0; }
+a { color: var(--font-clr-1); }
+#welcome-section {
+    background: linear-gradient(#ddf2f9, #9ce3fb);
+}
+#suscription-section {
+    background-color: var(--secondary);
+}
+footer * {
+    background-color: var(--dark);
+    color: var(--font-clr-4);
+}
+.hidden {
+    display: none;
+}
+.show {
+    display: inline;
+}
+img {
+    max-width: 100%;
+}
+
+/* Mobile-first */
+
+header {
+    display: grid;
+}
+header img {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    margin: 1rem;
+}
+header button {
+    grid-column: 4/6;
+    grid-row: 1/2;
+}
+header nav {
+    grid-column: 1/6;
+    grid-row: 2/3;
+}
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 40vh;
+}
+
+@media (min-width: 600px) {
+    :root {
+        font-size: 25px;
+    }
+}
+
